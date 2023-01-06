@@ -1,0 +1,130 @@
+.banner {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    height: 38px;
+    background-color: #333;
+    display: flex;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    top: 0%;
+    z-index: 102;
+    
+  
+  }
+  
+  li {
+    align-content: left;
+  }
+  
+  .bannerElement a
+  {
+    display: block;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  
+  }
+  
+  .bannerElement a:hover {
+    background-color: #111;
+    color: red;
+    transition: 0.5s;
+    
+  
+  }
+  
+  .bannerElement .dropmenu
+  {
+    color: white;
+    background-color: #333;
+    border: none;
+    margin-bottom: 10px;
+    font: inherit;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    height: 38px;
+    
+    }
+  
+  .bannerElement .dropmenu:hover {
+    background-color: #111;
+    color: red;
+    text-decoration: none;
+      padding: 10px 20px 10px 20px;
+      transition: 0.5s;
+    
+  }
+  
+  
+  .dropdown-content {
+    align-items: center;
+    
+  }
+  .dropdown-content .element:hover{
+      
+       transition: all 0.75s;
+       max-width: inherit;
+    }
+  
+  .dropmenu:hover .dropdown-content
+  {
+
+  transition: 0.75s;
+ 
+  }
+
+  .dropdown-content
+  {
+flex-direction: column;
+  background-color: #333;
+  position: absolute;
+ top: 38px;
+ left: 0px;
+ width: 100%;
+ padding: 0px;
+ align-content: center;
+ display: flex;
+ animation-name: fallDisplayBox;
+  animation-duration: 5.7s;
+  
+  }
+
+
+  a.element
+  {
+width: inherit;
+padding-left: 0px;
+padding-right: 0px;
+  }
+  
+  .dropmenu:hover i
+  {
+  transform: rotate3d(0,0,-1,90deg);
+  transition: 0.75s;
+  }
+
+  input
+  {
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    position: relative;
+    top: 25%;
+  }
+
+.dropdown-content a{
+  animation-name: fallDisplay;
+  animation-duration: 0.7s;
+}
+
+@keyframes fallDisplay{
+  from {color: transparent}
+    to {color: white} 
+}
+
+@keyframes fallDisplayBox{
+  from {color: transparent}
+    to {color: rgb(203, 6, 6)} 
+}

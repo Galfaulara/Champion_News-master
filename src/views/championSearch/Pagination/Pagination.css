@@ -1,0 +1,35 @@
+.paginationNav {
+    list-style-type: none;
+}
+
+.paginationDiv{
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paginationBtns {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    
+    
+}
+
+.paginationBtns button{
+    height: 4.5vh;
+    width: 4.5vh;
+    color: white;
+    background-color: #333;
+    border-color: transparent;
+    border-radius: 50px;
+    
+}
+
+.paginationBtns :hover{
+
+    color: red;
+    border-radius: 10px;
+    transition: 0.3s;
+ 
+}

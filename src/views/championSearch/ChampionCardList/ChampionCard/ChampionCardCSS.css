@@ -1,0 +1,88 @@
+
+.Card
+{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    margin: 1.5%;
+    width: 14vh;
+    border: 3.5px solid rgb(26, 26, 26);
+    text-align: center;
+    box-shadow: 0px 5px 20px black;
+    animation-name: popup;
+    animation-duration:1.25s;
+    position: relative;
+    border-radius: 18px;
+    background:linear-gradient(to bottom, #000000 0, #000000 85%, #373636 100%);
+}
+
+.Link{
+   display: flex;
+   margin-left: 0.5%;
+   margin-right: 0.5%;
+   margin-top: 1.75%;
+   margin-bottom: 1%;
+   text-decoration: none;
+   height: 30vh;
+  border-radius: 20px;
+    width: 14vh;
+}
+
+.ChampionCardBackground {
+    border-radius: 15px;
+    margin-bottom: 5%;
+    height: 75%;
+    width: 100%;
+    user-select: none;
+}
+
+
+@keyframes popup{
+   from {width: 0px;}
+   to {width: 14vh;} 
+}
+
+@keyframes popuptext1{
+    from {height: 0;}
+    to {height: auto;} 
+ }
+
+
+ @keyframes popuptext2{
+    from {color: rgba(255, 0, 0, 0);}
+    to {color: rgb(255, 255, 255);} 
+ }
+
+
+
+.ChampionCardStyle :hover 
+
+{
+    transition: all 1.75s;
+    transform: scale(1.035);
+
+}
+
+h2,p
+{
+    position: relative;
+    bottom: 0px;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 1.6vh;
+    text-align:bottom;
+    transform-origin: center;
+    animation-duration: 6s;
+    animation-name: popuptext1;
+    animation-name: popuptext2;
+    user-select: none;
+    font-weight: bold;
+    pointer-events: none !important;
+}
+
+.ChampionCardStyle{
+    display: flex;
+    flex-Direction: row;
+    flex-Wrap: wrap; 
+justify-content: center;
+}
